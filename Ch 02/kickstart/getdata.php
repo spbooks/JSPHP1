@@ -5,7 +5,7 @@
 		$query = $db->prepare("SELECT * FROM users");
 		$query->execute();
 		for($i=0; $row = $query->fetch(); $i++){
-			echo $row['id'].' - '.$row['name'].' - '.$row['email'].' - '.$row['password'];
+			echo $row['id'].' - '.$row['username'].' - '.$row['email'].' - '.$row['password'];
 			echo "<br/>";
 		}
 	}catch (PDOException $e) {
